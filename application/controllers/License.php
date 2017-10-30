@@ -84,8 +84,8 @@ class License extends CI_Controller {
     {
         if (!@$_FILES['fileToUpload']['error']) {
             $myRandom = rand(1, 10000);
-            ($_SERVER['SERVER_NAME'] == 'localhost' ? $target_dir = "/Applications/XAMPP/xamppfiles/htdocs/nursing/assets/uploads/" :
-                ($_SERVER['SERVER_NAME'] == 'webdev.highlands.edu' ? $target_dir = "/var/www/html/nursing/assets/uploads/" : $target_dir = "/var/www/forms/nursing/assets/uploads/" ));
+            ($_SERVER['SERVER_NAME'] == 'localhost' ? $target_dir = "/Applications/XAMPP/xamppfiles/htdocs/asn/assets/uploads/" :
+                ($_SERVER['SERVER_NAME'] == 'webdev.highlands.edu' ? $target_dir = "/var/www/html/asn/assets/uploads/" : $target_dir = "/var/www/forms/asn/assets/uploads/" ));
             $target_file = $target_dir . $myRandom . basename($_FILES["fileToUpload"]["name"]);
             $myFile = basename($_FILES["fileToUpload"]["name"]);
             $uploadOk = 1;
